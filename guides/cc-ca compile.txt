@@ -1,0 +1,8 @@
+ca65 makes o files
+must use linker to make ROM immage 
+
+ld65 -C <config file> <.o file>
+
+MAKE SURE TO SUBTARCT OTHER SEGMENTS -- https://www.youtube.com/watch?v=0q6Ujn_zNH8&list=PLowKtXNTBypFbtuVMUVXNR0z1mu7dp7eH&index=25  TIME 11:27
+
+HAS TO BE IN ORDER TOO

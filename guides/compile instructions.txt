@@ -1,0 +1,4 @@
+vasm6502_oldstyle -Fbin -dotdir -c02 <directory>
+-- change <directory> to the directory of the file to compile
+-- should make a file called a.out in ur user files
+

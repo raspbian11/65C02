@@ -1,0 +1,33 @@
+
+Use SimplySerial
+DOWNLOAD FORM https://github.com/fasteddy516/SimplySerial
+ 
+PLS NOTE THAT YOU MIGHT HAVE TO MANUALLY ADD A VARIABLE FOR CMD PROMT
+TO LOCATE FILES
+windows key +r
+%USERPROFILE%\AppData\Roaming\SimplySerial
+hit enter
+find ss.exe
+click on ss.exe and then right click it and copy as path
+go to windows search bar
+type "Edit environmental variable for your account"
+open it
+under the "user variables section" click new
+in the variable value paste the path for ss.exe
+in the variable name type ss
+click ok
+click ok
+
+
+
+SERIAL 
+ss -com:14 -baud:19200 -databits:8 -stopbits:1 -parity:none -forcenewline:on
+1 stop bit
+8 bit
+19,200 BAUD
+NO PARADY
+NO ECHO
+
+
+a0 forward 
+a1 reverse

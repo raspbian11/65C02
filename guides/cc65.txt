@@ -1,0 +1,58 @@
+once downloaded extract the zip file
+preferably, move the extracted file out of the downloads folder
+
+open the bin folder in the unzipped files
+find the program you want to use for the system (im using cc65, so does ben eater)
+
+
+open powershell as admin 
+
+replace C:\65c02\cc65-snapshot-win64\bin with ur BIN directory (KEEPS QUOTES!!!)
+then run it
+
+$bin = "C:\65c02\cc65-snapshot-win64\bin"
+
+$path = [Environment]::GetEnvironmentVariable("Path", "Machine") -split ';'
+if ($path -notcontains $bin) {
+  $path += $bin
+}
+
+[Environment]::SetEnvironmentVariable("Path", ($path -join ';'), "Machine")
+
+
+CLOSE ALL INSTANCES OF POWERSHELL
+open it again 
+run cc65 --version
+
+u should get something like  cc65 V2.19 - Git 034f73a   
+
+ 
+if it dosent work serch for "edit system environmental variables"
+run it
+bottom right there should be a button that says "environmental variables..."
+click it
+
+under system variables, click new
+in variable name type cc65
+in variable value paste the BIN directory from earlier 
+
+click ok
+
+click ok
+
+click ok
+
+CLOSE ALL INSTANCES OF POWERSHELL
+open it again 
+run cc65 --version
+
+u should get something like  cc65 V2.19 - Git 034f73a   
+
+to use just type cc65 followed by any arguments u want to make
+
+the cc65 is to complie form c
+
+ca65 is to compile ASM
+
+
+
